@@ -1,1 +1,0 @@
-from scripts.log_manager import logger
