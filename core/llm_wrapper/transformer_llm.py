@@ -4,10 +4,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from scripts import logger
 import subprocess
 
-
-import os
-from transformers import AutoModelForCausalLM, AutoTokenizer
-
 class TransformerLLM:
     def __init__(self, model_id, local_dir="models/full") -> None:
         self.device = "cuda" if torch.cuda.is_available() else "cpu"

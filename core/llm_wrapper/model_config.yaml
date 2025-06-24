@@ -1,0 +1,5 @@
+model:
+  type: "quantized"
+  id: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  quant_type: "f16"
+  quant_path: "models/quantized/TinyLlama-1.1B-Chat-v1.0-f16.gguf"
