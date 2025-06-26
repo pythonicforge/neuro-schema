@@ -1,5 +1,5 @@
 model:
-  type: "quantized"
-  id: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  type: "transformer"
+  id: "cognitivecomputations/TinyDolphin-2.8-1.1b"
   quant_type: "f16"
   quant_path: "models/quantized/TinyLlama-1.1B-Chat-v1.0-f16.gguf"
