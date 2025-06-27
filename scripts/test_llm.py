@@ -7,9 +7,11 @@
 
 from core.llm_wrapper import TransformerLLM, QuantizedLLM
 
-# transformed_model = TransformerLLM(model_id="cognitivecomputations/TinyDolphin-2.8-1.1b")
-# transformed_model.quantize_to_gguf()
+QuantizedLLM.show_system_info()
 
-quantized_model = QuantizedLLM(model_path="models/quantized/TinyDolphin-2.8-1.1b-f16.gguf")
-response = quantized_model.generate("Can you explain me what is conciousness?")
-print(f"RESPONSE: {response}")
+transformed_model = TransformerLLM(model_id="cognitivecomputations/TinyDolphin-2.8-1.1b")
+transformed_model.quantize_to_gguf()
+
+# quantized_model = QuantizedLLM(model_path="models/quantized/Guanaco-3B-Uncensored-v2-f16.gguf", gpu_layers=None)
+# response = quantized_model.generate("Can you explain me what is conciousness?")
+# print(f"RESPONSE: {response}")
